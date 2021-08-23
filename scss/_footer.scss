@@ -1,0 +1,105 @@
+/*  NavBar del Footer*/
+footer{
+    nav{
+        background-color: #a27861;
+        border: solid 0.5rem #50433d;
+        text-align: center;
+        width: auto;
+        ul{
+            li{
+                list-style: none;
+                border-bottom: solid #50433d 0.3rem;
+                a{
+                    font-size: 3rem;
+                    text-decoration: none;
+                    color: #f2e9e4;
+                    &:hover{
+                        color: #50433d;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  media query de NavBar del Footer    */
+footer{
+    nav{
+        @media only screen and (min-width: 768px){
+            ul{
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                justify-content: space-around;
+                padding-top: 1.3rem;
+                padding-bottom: 1.3rem;
+                padding-left: 0rem;
+                li{
+                    border: none;
+                    a{
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+        @media only screen and (min-width:1200px){
+            ul{
+                border:none;
+                li{
+                    a{
+                        font-size: 4rem;
+                    }
+                }
+            }      
+        }
+    }
+}
+/*  NavBar Redes Sociales*/
+
+.redesSociales{
+    font-size: 3rem;
+    border-left: solid 0.2rem #50433d;
+    border-right: solid 0.2rem #50433d;
+    border-bottom: solid 0.3rem #50433d;
+    text-align: center;
+    color: #50433d;
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: #f2e9e4;
+            &:hover{
+                color: #50433d;
+                cursor: pointer;
+            }
+        }
+    }
+    p{
+        font-size: 3rem;
+    }
+}
+
+/*  media query de NavBar Redes Sociales*/
+
+.redesSociales{
+    @media only screen and (min-width: 768px){
+        padding: 0.5rem 0rem;
+        a{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 4.5rem;
+            font-weight: bold;
+        }
+    }
+    @media only screen and (min-width: 1200px){
+        a{
+            font-size: 4rem;
+        }
+        p{
+            font-size: 6rem;
+        }
+
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Editorial Panda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/sassed.css">
+
+    <meta name="description" content="Centro de registro de Editorial panda, siéntase libre de suscribirse a nuestro Newsletter.">
+    <meta name="keywords" content="CENTRO DE REGISTRO, REGISTRO, INICIAR SESION, CREAR CUENTA">
+</head>
+<body>
+    <header>
+        <!--imagen Heroe y logo -->
+        <h1 class="mb-0 pt-3 pb-4"><a href="../index.html">Editorialpanda</a></h1>
+    
+        <!--Botonera de navegación Principal-->
+    
+        <nav class="d-flex flex-column">
+            <ul class="m-0 p-0">
+                <li><a href="./podcast.html">Podcast</a></li>
+                <li><a href="./registro.html">Registro</a></li>
+                <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li class="bordeNav"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contacto">
+        <h2 id="tituloPrimero">Crear cuenta nueva</h2>
+        <fieldset>
+            <form action="" method="POST">
+            
+                <label for="Nombre">Nombre</label> <br>
+                <input type="text" name="Nombre" placeholder="Aquí su nombre">  <br> 
+
+                <label for="Apellido">Apellido</label> <br>
+                <input type="text" name="Apellido" placeholder="Aquí su apellido"> <br>
+
+                <label for="email">Email</label> <br>
+                <input type="email" name="email" placeholder="Aquí su email"> <br>
+        
+                <label for="password">Contraseña</label> <br>
+                <input type="password" name="password" placeholder=" Aquí su contraseña"> <br>
+
+                <label for="newsletter">Desea suscribirse a nuestro Newsletter?</label>
+                <input type="checkbox" name="newsletter"> <br>
+
+                <input type="reset" value="Cancelar">
+                <input type="submit" value="Crear cuenta">
+            </form>
+            <button class="buttonRegister"> Inicia Sesión</button>
+        </fieldset>
+
+            <!--Empieza código de animación de panda-->
+        <div class="gifWidth">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_jy2rtbxn.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+        </div>
+            <!--Termina código de animación de panda-->
+    </section>
+
+                <!--Footer y redes sociales-->
+    <footer>
+        <nav>
+            <div class="redesSociales"><p>Seguinos en nuestras redes sociales</p>
+                <ol>
+                    <li><a href="https://www.facebook.com/" target="blanket">Facebook</a></li>
+                    <li><a href="https://twitter.com/" target="blanket">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/" target="blanket">Instagram</a></li>
+                </ol>
+            </div>
+            <ul class="ps-0">
+                <li><a href="./podcast.html">Podcast</a></li>
+                <li><a href="./registro.html">Registro</a></li>
+                <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+/*  Sección Novedades dentro del index  */
+
+.seccionNovedadesIndex{
+    color: #50433d;
+    background-color: #e2d3ca;
+    border: solid 0.2rem #50433d;
+    img{
+        width: 50vw;;
+    }
+    font-size: 3rem;
+}
+
+/*  media query class seccionnovedades  */
+
+.seccionNovedadesIndex{
+    @media only screen and (min-width: 768px){
+        img{
+            width: 35vw;
+        }
+        font-size: 3.5rem;
+    }
+    @media only screen and (min-width: 1200px){
+        img{
+            width: 16vw;
+        }
+        font-size: 4rem;
+    }
+}
+
+/*    Grid Novedades  */
+
+.gridNov{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    padding: 3rem 3rem;
+}
+
+/*    media query gridNov     */
+
+.gridNov{
+    @media only screen and (min-width: 768px){
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:50% 50%;
+        padding: 5rem 5rem;
+    }
+    @media only screen and (min-width: 1200px){
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:2fr;
+        grid-column-gap: 10rem;
+        padding: 5rem;
+    }
+}
+
+/*  Flex Novedades  */
+
+.flexNov{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0rem;
+    border: double 1rem #50433d;
+}
+

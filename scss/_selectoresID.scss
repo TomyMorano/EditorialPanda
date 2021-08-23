@@ -1,0 +1,45 @@
+/*  Selectores de Id    */
+
+    /*  seccion Novedades Inicio   */
+#tituloNovedades{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #50433d;
+    font-size: 4rem;
+    font-weight: bold;
+    text-decoration: none;
+    background-image: linear-gradient(#e2d3ca, #a27861);
+    border: 0.5rem solid #50433d;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+/*  media query de id:tituloNovedades:  */
+#tituloNovedades{
+    @media only screen and (min-width: 768px){
+        font-size: 5rem;
+    }
+    @media only screen and (min-width: 1200px){
+        font-size: 6rem;
+    }
+
+}
+
+#tituloPrimero{
+    @extend #tituloNovedades ;
+    border-top: #50433d solid 0.1rem;
+}
+
+#tituloVerProductos{
+    border-bottom: #50433d solid 0.1rem;
+    @extend #tituloNovedades ;
+    a{
+        text-decoration: none;
+        color: #50433d;
+    }
+    &:hover{
+        color: #f2e9e4;
+        background-image: linear-gradient( #a27861,#e2d3ca);
+    }
+}

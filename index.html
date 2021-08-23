@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Editorial Panda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/sassed.css">
+
+    <meta name="description" content="Somos un grupo de traductores que decidimos abrir nuestra editorial para así poder llevar a cabo la tarea que más nos gusta realizar y de la mejor manera.">
+    <meta name="keywords" content="LIBROS, EDITORIAL, LIBRERÍA, BIBLIOTECA">
+</head>
+<body>
+    <header>
+        <!--imagen Heroe y logo -->
+        <h1 class="mb-0 pt-3 pb-4"><a href="./index.html">Editorialpanda</a></h1>
+
+        <!--  Botonera de navegación Principal  -->
+        <nav class="d-flex flex-column navBar">
+            <ul class="m-0 p-0">
+                <li><a href="./pages/podcast.html">Podcast</a></li>
+                <li><a href="./pages/registro.html">Registro</a></li>
+                <li><a href="./pages/sobrenosotros.html">Sobre nosotros</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li class="bordeNav"><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <!--  empieza seccion noticias con productos nuevos -->
+
+    <section class="carouselNov">
+        <h2 id="tituloPrimero">Nuevos ingresos</h2>
+
+        <!--  empiza código de carousel -->
+
+        <div class="container col-md-7 col-lg-5 ">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                <div class="carousel-inner">
+                    <!--    item 1 carousel     -->
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./fotos/fotosCarousel/libretaColorNegra.png" class="d-block w-100" alt="foto de una libreta amarilla con margaritas">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Libreta Negra</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <!--    item 2 carousel     -->
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./fotos/fotosCarousel/libretaCorazonNegra.png" class="d-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Libreta Corazón Negra</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <!--    item 3 carousel     -->
+                    <div class="carousel-item">
+                        <img src="./fotos/fotosCarousel/libretaLila.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h5>Libreta libretaLila</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+           </div>
+        </div>
+            <!--termina el código del carousel-->
+    </section>
+
+        <!--empieza sección Novedades-->
+    <section>
+        <h2 id="tituloNovedades">Novedades</h2>
+        <div class="seccionNovedadesIndex gridNov">
+
+                <!--Empieza item La guerra de los mundos-->
+            <article class="flexNov"><img src="./fotos/laGuerraDeLosMundosPortada.jpg"alt="Portada de el libro la guerra de los mundos">
+                <p>La Guerra de los Mundos <br> Autor: H.G. Wells <br> Género: Novela<br> Temática: Ciencia Ficción</p>
+            </article>
+
+                <!--Empieza item El Martín Fierro-->
+            <article class="flexNov"><img src="./fotos/martinFierroPortada.jpg" alt="Portada de el libro Martín Fierro"> 
+                <p>Martín Fierro <br> Autor: José Hernéndez <br> Género: Poesía <br> Temática: Poesía Gauchesca</p>
+            </article>
+
+                <!--Empieza item El Alimento de los dioses-->
+            <article class="flexNov"><img src="./fotos/elAlimentoDeLosDiosePortada.jpg"alt="Portada de el libro el alimento de los dioses">
+                <p>El alimento de los dioses <br> Autor: H.G. Wells <br>Género: Novela <br>Temática: Ciencia Ficción</p>
+            </article>
+
+                <!--Empieza codigo de animación Panda-->
+            <div class="flexNov">
+                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_8zqlgf2z.json" mode="bounce" background="#e2d3ca"  speed="0.6" loop autoplay ></lottie-player>
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            </div>
+                <!--Termina código de anmación Panda-->
+        </div>
+        <h3 id="tituloVerProductos"><a href="./pages/productos.html">Ver todos los productos</a></h3>
+    </section>
+
+                <!--Footer y redes sociales-->
+    <footer class="gradient">
+        <nav>
+            <div class="redesSociales"><p>Seguinos en nuestras redes sociales</p>
+                <ol>
+                    <li><a href="https://www.facebook.com/" target="blanket">Facebook</a></li>
+                    <li><a href="https://twitter.com/" target="blanket">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/" target="blanket">Instagram</a></li>
+                </ol>
+            </div>
+            <ul class="m-0 p-0">
+                <li><a href="./pages/podcast.html">Podcast</a></li>
+                <li><a href="./pages/registro.html">Registro</a></li>
+                <li><a href="./pages/sobrenosotros.html">Sobre nosotros</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+        <!--    script de carousel(bootstrap)   -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

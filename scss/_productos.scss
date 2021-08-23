@@ -1,0 +1,97 @@
+        /*  Sección de productos    */
+
+    /*  grid de productos   */
+
+.gridProductosLibros{
+    background-color: #e2d3ca;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-row-gap: 3rem;
+    padding: 5rem 5rem;
+    justify-items: center;
+        img{
+        width: 45vw;
+    }
+}
+    /*  media query de gridProductos    */
+
+.gridProductosLibros{
+    @media only screen and (min-width: 768px){
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        grid-column-gap: 10rem ;
+        grid-row-gap: 5rem;
+        padding: 10rem 10rem;
+        img{
+            width: 20vw;
+        }
+    }
+    @media only screen and (min-width: 1200px){
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        img{
+            width: 13vw;
+        }
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 1 / 3 / 2 / 4; }
+        .div5 { grid-area: 2 / 1 / 3 / 2; }
+        .div6 { grid-area: 2 / 2 / 3 / 3; }
+        .div7 { grid-area: 2 / 3 / 3 / 4; }
+    }
+
+}
+
+    /*  items de productos  */
+
+.articuloLibro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #50433d;
+    background-color: #e2d3ca;
+    border: #50433d 1rem double;
+    padding: 2rem 2rem;
+    img{
+        margin: 1rem 3.5rem;
+    }
+    button{
+        color:#50433d;
+        background-color: #d3b9ab;
+        border: #50433d solid 0.3rem;
+        padding: 0.5rem 0.5rem;
+        margin-top: 1rem;
+        &:hover{
+            cursor: pointer;
+            background-color:#F2E9E4;
+            color: #a27861;
+        }
+    }
+    p{
+        font-size: 3rem;
+    }
+}
+/*  media query de .articuloLibro   */
+
+.articuloLibro{
+    @media only screen and (min-width: 768px){
+        p{
+            font-size: 4rem;
+        }
+    }
+    @media only screen and (min-width: 1200px){
+        font-size: 4.5rem;
+        button{
+            font-size: 4rem;
+            font-weight: 600;
+            padding: 1rem 2.5rem;
+            margin-top: 1.5rem;
+        }
+    }
+
+}

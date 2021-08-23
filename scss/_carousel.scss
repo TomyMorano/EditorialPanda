@@ -1,0 +1,24 @@
+    /* carosuel en inicio */
+.carouselNov{
+    background-color: #d3b9ab;
+    h5{
+        color: #50433d;
+        font-size: 3rem;
+    }
+    p{
+        font-size: 2rem;
+        color: #F2E9E4;
+    }
+}
+
+/*  media query carousel    */
+
+.carouselNov{
+    @media only screen and (min-width: 1200px){
+        h5{
+            font-size: 5rem;
+        }
+    }
+}
+
+

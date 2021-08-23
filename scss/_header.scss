@@ -1,0 +1,102 @@
+    /*  Zona Del Header e imagen heroe  */
+    
+header{
+    h1{
+        background-image: url(../fotos/ImagenHeader.jpg);
+        background-size:auto no-repeat;
+        background-position: center top;
+        text-align: center;
+        a{
+            img{
+                display:block;
+                margin-right:auto;
+                margin-left: 2rem;
+                margin-top: 2rem;
+
+            }
+            color: #e2d3ca;
+            font-size: 6rem;
+            font-weight: 800;
+            text-decoration: none;
+            &:hover{
+                color: #50433d;
+            }
+        }
+    }
+}
+
+    /*  Media query de Zona del Header e imagen Heroe    */
+
+header{
+    h1{
+        a{
+            @media only screen and (min-width: 768px){
+                font-size: 8rem;
+            }
+            @media only screen and (min-width: 1200px){
+                font-size: 10rem;
+            }
+        }
+    }
+}
+
+    /*  Botonera Principal  */
+
+header{
+    nav{
+        background-color: #a27861;
+        border: solid 0.5rem #50433d;
+        text-align: center;
+        width: auto;
+        ul{
+            li{
+                list-style: none;
+                border-bottom: solid #50433d 0.3rem;
+                a{
+                    font-size: 3rem;
+                    text-decoration: none;
+                    color: #f2e9e4;
+                    &:hover{
+                        color: #50433d;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+/*  Media query de Botonera Principal    */
+header{
+    nav{
+        @media only screen and (min-width: 768px){
+            ul{
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                justify-content: space-around;
+                padding-top: 1.3rem;
+                padding-bottom: 1.3rem;
+                li{
+                    border: none;
+                    a{
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+        @media only screen and (min-width:1200px){
+            ul{
+                border:none;
+                li{
+                    a{
+                        font-size: 4rem;
+                    }
+                }
+            }      
+        }
+    }
+}
+
+.bordeNav{
+    border: none !important;
+}
