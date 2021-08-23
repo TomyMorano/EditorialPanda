@@ -16,6 +16,9 @@
         margin: 2rem 2rem;
         padding: 2rem 2rem;
     }
+    label{
+        font-weight: bolder;
+    }
     input{
         width: 80%;
         align-self: center;
@@ -24,7 +27,7 @@
         color: #50433d;
         margin: 1rem;
         padding: 0.5rem 0.5rem;
-        &:hover{
+                &:hover{
             cursor: pointer;
         }
     }
@@ -34,6 +37,7 @@
         color: #50433d;
         padding-bottom: 2rem;
         font-size: 4rem;
+        border: #50433d solid 0.3rem;
         &:hover{
             color: #a27861;
             cursor: pointer;
@@ -54,8 +58,9 @@
     background-color: #F2E9E4;
     color: #50433d;
     border: #50433d solid 0.2rem;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 1.5rem;
     margin: 1rem 1rem;
+    font-weight: bolder;
 }
 
 /*  Sección Sobre Nosotros  */
@@ -64,8 +69,12 @@
     color: #50433d;
     background-color: #F2E9E4;
     text-align: center;
+    font-family: $font2;
+    border-left: #50433d 0.5rem solid;
+    border-right: #50433d 0.5rem solid;
     a{
         color: #a27861;
         text-decoration: none;
+        font-family: $font2;
     }
 }

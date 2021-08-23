@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*importFont*/
-@import url("https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
 /*10px=1rem*/
 html {
   font-size: 62.5%; }
@@ -9,7 +10,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  font-family: 'ZCOOL QingKe HuangYou',cursive; }
+  font-family: 'Merienda', cursive; }
 
 /*  Selectores de Id    */
 /*  seccion Novedades Inicio   */
@@ -56,8 +57,8 @@ header h1 {
   text-align: center; }
   header h1 a {
     color: #e2d3ca;
-    font-size: 6rem;
-    font-weight: 800;
+    font-size: 4.2rem;
+    font-weight: bolder;
     text-decoration: none; }
     header h1 a img {
       display: block;
@@ -87,6 +88,7 @@ header nav {
     border-bottom: solid #50433d 0.3rem; }
     header nav ul li a {
       font-size: 3rem;
+      font-weight: bolder;
       text-decoration: none;
       color: #f2e9e4; }
       header nav ul li a:hover {
@@ -99,10 +101,10 @@ header nav {
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: space-around;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem; }
+    justify-content: space-around; }
     header nav ul li {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
       border: none; }
       header nav ul li a {
         font-size: 3rem; } }
@@ -242,6 +244,8 @@ footer nav {
   text-align: center;
   padding: 1rem 0rem;
   border: double 1rem #50433d; }
+  .flexNov p {
+    font-family: "Roboto", sans-serif; }
 
 /*      Sección de estilos del podcast      */
 /*  Sección grid del podcast    */
@@ -281,7 +285,7 @@ footer nav {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-around !important;
   align-items: center;
   text-align: center;
   border: double #50433d 1rem;
@@ -291,7 +295,8 @@ footer nav {
     border: solid #50433d 0.2rem;
     background-color: #d3b9ab;
     font-size: 3rem;
-    padding: 1rem 1rem; }
+    padding: 1rem 1rem;
+    font-family: "Roboto", sans-serif; }
   .flexPodcast li {
     margin-top: 2rem;
     list-style: none; }
@@ -301,13 +306,15 @@ footer nav {
     color: #50433d;
     border: #50433d solid 0.2rem;
     font-size: 3rem;
-    padding: 1rem 1rem; }
+    padding: 1rem 1rem;
+    font-family: "Roboto", sans-serif; }
     .flexPodcast a:hover {
       color: #F2E9E4;
       background-color: #a27861;
       cursor: pointer; }
   .flexPodcast p {
-    font-size: 3rem; }
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif; }
   .flexPodcast h3 {
     margin-top: 1rem;
     font-size: 3.5rem;
@@ -422,6 +429,8 @@ footer nav {
     border: #50433d solid 0.2rem;
     margin: 2rem 2rem;
     padding: 2rem 2rem; }
+  .contacto label {
+    font-weight: bolder; }
   .contacto input {
     width: 80%;
     align-self: center;
@@ -436,7 +445,8 @@ footer nav {
     background-color: #F2E9E4;
     color: #50433d;
     padding-bottom: 2rem;
-    font-size: 4rem; }
+    font-size: 4rem;
+    border: #50433d solid 0.3rem; }
     .contacto select:hover {
       color: #a27861;
       cursor: pointer; }
@@ -452,28 +462,35 @@ footer nav {
   background-color: #F2E9E4;
   color: #50433d;
   border: #50433d solid 0.2rem;
-  padding: 0.5rem 0.5rem;
-  margin: 1rem 1rem; }
+  padding: 0.5rem 1.5rem;
+  margin: 1rem 1rem;
+  font-weight: bolder; }
 
 /*  Sección Sobre Nosotros  */
 .textoExplicativo {
   font-size: 3rem;
   color: #50433d;
   background-color: #F2E9E4;
-  text-align: center; }
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  border-left: #50433d 0.5rem solid;
+  border-right: #50433d 0.5rem solid; }
   .textoExplicativo a {
     color: #a27861;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: "Roboto", sans-serif; }
 
 /* carosuel en inicio */
 .carouselNov {
   background-color: #d3b9ab; }
   .carouselNov h5 {
     color: #50433d;
-    font-size: 3rem; }
+    font-size: 3rem;
+    font-weight: bolder; }
   .carouselNov p {
     font-size: 2rem;
-    color: #F2E9E4; }
+    color: #F2E9E4;
+    font-family: "Roboto", sans-serif; }
 
 /*  media query carousel    */
 @media only screen and (min-width: 1200px) {

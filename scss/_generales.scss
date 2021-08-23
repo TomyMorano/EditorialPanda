@@ -1,5 +1,6 @@
 /*importFont*/
-@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
 /*10px=1rem*/
 html{
@@ -10,7 +11,8 @@ html{
 *{
     margin: 0;
     padding: 0;
-    font-family: 'ZCOOL QingKe HuangYou',cursive;
+    font-family: 'Merienda', cursive;
 }
 
-
+$font1:'Merienda', cursive;
+$font2:'Roboto', sans-serif;
