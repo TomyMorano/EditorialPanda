@@ -43,3 +43,22 @@
         background-image: linear-gradient( #a27861,#e2d3ca);
     }
 }
+
+#tituloVolverInicio{
+    @extend #tituloNovedades ;
+    a{
+        text-decoration: none;
+        color: #50433d;
+        &:hover{
+            color: #f2e9e4;
+        }
+    }
+    &:hover{
+        color: #f2e9e4;
+        background-image: linear-gradient( #a27861,#e2d3ca);
+    }
+    width: fit-content;
+    margin-bottom: 15rem;
+    margin-top: 4rem;
+
+}
