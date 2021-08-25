@@ -1,14 +1,14 @@
 {
-  "name": "bootsrapesta",
+  "name": "desafio_coder--editorial_panda",
   "version": "1.0.0",
-  "description": "",
+  "description": "Editorial Panda",
   "main": "index.js",
   "scripts":{
     "build-css": "node-sass --include-path scss scss/styles.scss css/sassed.css",
 		"watch-css": "nodemon -e scss -x \"npm     run build-css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "tomi",
+  "author": "Tomás Morano",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
