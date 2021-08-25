@@ -57,7 +57,7 @@ header h1 {
   text-align: center; }
   header h1 a {
     color: #e2d3ca;
-    font-size: 4.2rem;
+    font-size: 3.6rem;
     font-weight: bolder;
     text-decoration: none; }
     header h1 a img {
@@ -69,6 +69,10 @@ header h1 {
       color: #50433d; }
 
 /*  Media query de Zona del Header e imagen Heroe    */
+@media only screen and (min-width: 500px) {
+  header h1 a {
+    font-size: 5rem; } }
+
 @media only screen and (min-width: 768px) {
   header h1 a {
     font-size: 8rem; } }
@@ -282,7 +286,7 @@ footer nav {
 
 /*  Sección flex del podcast    */
 .flexPodcast {
-  width: 100%;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-around !important;
@@ -373,7 +377,7 @@ footer nav {
 
 /*  items de productos  */
 .articuloLibro {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -390,7 +394,8 @@ footer nav {
     background-color: #d3b9ab;
     border: #50433d solid 0.3rem;
     padding: 0.5rem 0.5rem;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    font-size: 3rem; }
     .articuloLibro button:hover {
       cursor: pointer;
       background-color: #F2E9E4;
@@ -415,6 +420,7 @@ footer nav {
 /*  Sección de contacto */
 .contacto {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -425,7 +431,7 @@ footer nav {
   background-repeat: no-repeat; }
   .contacto fieldset {
     background-color: #F2E9E4;
-    width: auto;
+    width: fit-content;
     border: #50433d solid 0.2rem;
     margin: 2rem 2rem;
     padding: 2rem 2rem; }
@@ -437,6 +443,7 @@ footer nav {
     background-color: #F2E9E4;
     border: #50433d solid 0.3rem;
     color: #50433d;
+    font-size: 3rem;
     margin: 1rem;
     padding: 0.5rem 0.5rem; }
     .contacto input:hover {
@@ -462,9 +469,13 @@ footer nav {
   background-color: #F2E9E4;
   color: #50433d;
   border: #50433d solid 0.2rem;
+  font-size: 3rem;
   padding: 0.5rem 1.5rem;
   margin: 1rem 1rem;
   font-weight: bolder; }
+  .buttonRegister:hover {
+    transform: scale(1.03);
+    cursor: pointer; }
 
 /*  Sección Sobre Nosotros  */
 .textoExplicativo {

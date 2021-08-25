@@ -6,6 +6,8 @@
   "scripts":{
     "build-css": "node-sass --include-path scss scss/styles.scss css/sassed.css",
 		"watch-css": "nodemon -e scss -x \"npm     run build-css\"",
+    "build-bt": "node-sass --include-path scss bootstrap/bootstrap.scss css/bootstrap.css",
+    "watch-bt": "nodemon -e scss -x \"npm run build-bt\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tomás Morano",
