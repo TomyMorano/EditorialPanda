@@ -533,16 +533,16 @@ footer nav {
   text-align: center; }
 
 /* gif general  */
-.gifWidthERROR {
+.gifWidthERROR404 {
   width: 75vw; }
 
 /*media query gif general  */
 @media only screen and (min-width: 768px) {
-  .gifWidthERROR {
+  .gifWidthERROR404 {
     width: 50vw; } }
 
 @media only screen and (min-width: 1200px) {
-  .gifWidthERROR {
+  .gifWidthERROR404 {
     width: 35vw; } }
 
 /* carosuel en inicio */
