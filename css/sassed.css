@@ -14,7 +14,7 @@ html {
 
 /*  Selectores de Id    */
 /*  seccion Novedades Inicio   */
-#tituloNovedades, #tituloPrimero, #tituloVerProductos, #tituloVolverInicio {
+#tituloNovedades, #tituloPrimero, #tituloVerProductos, #tituloVolverInicio, #tituloPrimeroContacto {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -30,16 +30,15 @@ html {
 
 /*  media query de id:tituloNovedades:  */
 @media only screen and (min-width: 768px) {
-  #tituloNovedades, #tituloPrimero, #tituloVerProductos, #tituloVolverInicio {
+  #tituloNovedades, #tituloPrimero, #tituloVerProductos, #tituloVolverInicio, #tituloPrimeroContacto {
     font-size: 5rem; } }
 
 @media only screen and (min-width: 1200px) {
-  #tituloNovedades, #tituloPrimero, #tituloVerProductos, #tituloVolverInicio {
+  #tituloNovedades, #tituloPrimero, #tituloVerProductos, #tituloVolverInicio, #tituloPrimeroContacto {
     font-size: 6rem; } }
 
 #tituloPrimero {
-  border-top: #50433d solid 0.1rem;
-  width: 97%; }
+  border-top: #50433d solid 0.1rem; }
 
 #tituloVerProductos {
   border-bottom: #50433d solid 0.1rem; }
@@ -62,6 +61,10 @@ html {
   #tituloVolverInicio:hover {
     color: #f2e9e4;
     background-image: linear-gradient(#a27861, #e2d3ca); }
+
+#tituloPrimeroContacto {
+  border-top: #50433d solid 0.1rem;
+  width: 96%; }
 
 /*  Zona Del Header e imagen heroe  */
 header h1 {

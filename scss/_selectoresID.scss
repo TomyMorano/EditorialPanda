@@ -29,7 +29,6 @@
 #tituloPrimero{
     @extend #tituloNovedades ;
     border-top: #50433d solid 0.1rem;
-    width: 97%;
 }
 
 #tituloVerProductos{
@@ -62,4 +61,10 @@
     margin-bottom: 15rem;
     margin-top: 4rem;
 
+}
+
+#tituloPrimeroContacto{
+    @extend #tituloNovedades ;
+    border-top: #50433d solid 0.1rem;
+    width: 96%;
 }
