@@ -442,6 +442,7 @@ footer nav {
   justify-content: space-around;
   align-items: center;
   font-size: 3rem;
+  text-align: center;
   color: #50433d;
   background-image: url(../fotos/fondoContacto.jpg);
   background-size: cover;
@@ -459,6 +460,7 @@ footer nav {
     align-self: center;
     background-color: #F2E9E4;
     border: #50433d solid 0.3rem;
+    text-align: center;
     color: #50433d;
     font-size: 3rem;
     margin: 1rem;
