@@ -43,7 +43,8 @@ header h1 a {
   .flexHeader h1 {
     width: 100%; }
     .flexHeader h1 a {
-      white-space: nowrap; }
+      white-space: nowrap;
+      width: fit-content; }
 
 .imgHeader {
   background-image: url(../fotos/ImagenHeader.jpg);
@@ -57,6 +58,30 @@ header h1 a {
   margin: 1.5rem 0rem; }
   .logoHeader img {
     width: 25vw; }
+
+/*  media query de logoHeader   */
+@media only screen and (min-width: 500px) {
+  .logoHeader {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem; }
+    .logoHeader img {
+      width: 20vw; } }
+
+@media only screen and (min-width: 768px) {
+  .logoHeader {
+    align-self: flex-start; }
+    .logoHeader img {
+      width: 10vw; } }
+
+@media only screen and (min-width: 1200px) {
+  .logoHeader img {
+    width: 10vw; } }
+
+/*  media query flex Header */
+@media only screen and (min-width: 768px) {
+  .flexHeader {
+    flex-direction: row;
+    justify-content: space-around; } }
 
 /*  Botonera Principal  */
 header nav {

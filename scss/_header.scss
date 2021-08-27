@@ -42,6 +42,7 @@ header{
         width: 100%;
         a{
             white-space: nowrap;
+            width: fit-content;
         }
     }
 }
@@ -60,6 +61,35 @@ header{
     margin: 1.5rem 0rem;
     img{
         width: 25vw;
+    }
+}
+    /*  media query de logoHeader   */
+
+.logoHeader{
+    @media only screen and (min-width: 500px){
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        img{
+            width: 20vw;
+        }
+    }
+    @media only screen and (min-width: 768px){
+        img{
+            width: 10vw;
+        }
+        align-self: flex-start;
+    }
+    @media only screen and (min-width:1200px){
+        img{
+            width: 10vw;
+        }
+    }
+}
+    /*  media query flex Header */
+.flexHeader{
+    @media only screen and (min-width: 768px){
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
