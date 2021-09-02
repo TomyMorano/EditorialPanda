@@ -391,19 +391,23 @@ footer nav {
   padding: 2rem 2rem; }
   .articuloLibro img {
     margin: 1rem 3.5rem; }
-  .articuloLibro button {
-    color: #50433d;
-    background-color: #d3b9ab;
-    border: #50433d solid 0.3rem;
-    padding: 0.5rem 0.5rem;
-    margin-top: 1rem;
-    font-size: 3rem; }
-    .articuloLibro button:hover {
-      cursor: pointer;
-      background-color: #F2E9E4;
-      color: #a27861; }
-  .articuloLibro p {
-    font-size: 3rem; }
+
+p {
+  font-size: 3rem; }
+
+.botonCarrito button {
+  color: #50433d;
+  background-color: #d3b9ab;
+  border: #50433d solid 0.3rem;
+  padding: 0.5rem 0.5rem;
+  margin-top: 1rem;
+  font-size: 3rem; }
+  .botonCarrito button :active {
+    background-color: #d3b9ab; }
+  .botonCarrito button:hover {
+    cursor: pointer;
+    background-color: #F2E9E4;
+    color: #a27861; }
 
 /*  media query de .articuloLibro   */
 @media only screen and (min-width: 768px) {

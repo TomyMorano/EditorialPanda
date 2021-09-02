@@ -46,7 +46,7 @@
                 <p>--Libro-- <br> El llamado de Cthulhu <br> AR$777 <br></p>
 
                     <!--    Empieza código de toast( pop up de agregar al carrito)  -->
-                    <button type="button" class="btn btn-primary" id="liveToastBtn">Agregar al carrito</button>
+                    <button type="button" class="btn btn-primary botonCarrito" id="liveToastBtn">Agregar al carrito</button>
 
                     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
                     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -61,23 +61,6 @@
                         </div>
                     </div>
                     </div>
-
-                        <!-- Popper.js first, then Bootstrap JS -->
-                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-                    <script src="../bootstrap/js/bootstrap.min.js"></script>
-                    <script>
-                        var toastTrigger = document.getElementById('liveToastBtn')
-                        var toastLiveExample = document.getElementById('liveToast')
-                        if (toastTrigger) {
-                        toastTrigger.addEventListener('click', function () {
-                            var toast = new bootstrap.Toast(toastLiveExample)
-
-                            toast.show(true)
-                            toast.autohide(false)
-                        })
-                        }  
-                    </script>
-
 
                     <!--    Termina código de toast( pop up de agregar al carrito)  -->
             </article>
@@ -128,5 +111,25 @@
             </ul>
         </nav>
     </footer>
+
+
+    <!-- Script y Popper para toast (mensaje de su artículo ah sido agregado al carrito) -->    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script>
+            var option= {
+            animation:true,
+            delay:15000,
+            autohide:false
+        };
+            var toastTrigger = document.getElementById('liveToastBtn')
+            var toastLiveExample = document.getElementById('liveToast')
+            if (toastTrigger) {
+            toastTrigger.addEventListener('click', function () {
+            var toast = new bootstrap.Toast(toastLiveExample,option)
+            
+            toast.show(true)
+            })
+        }  
+    </script>
 </body>
 </html>
