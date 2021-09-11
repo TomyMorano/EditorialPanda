@@ -115,21 +115,6 @@
 
     <!-- Script y Popper para toast (mensaje de su artículo ah sido agregado al carrito) -->    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script>
-            var option= {
-            animation:true,
-            delay:15000,
-            autohide:false
-        };
-            var toastTrigger = document.getElementById('liveToastBtn')
-            var toastLiveExample = document.getElementById('liveToast')
-            if (toastTrigger) {
-            toastTrigger.addEventListener('click', function () {
-            var toast = new bootstrap.Toast(toastLiveExample,option)
-            
-            toast.show(true)
-            })
-        }  
-    </script>
+    <script src="../js/toastProductos.js"></script> 
 </body>
 </html>
