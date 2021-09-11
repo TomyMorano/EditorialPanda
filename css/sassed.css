@@ -395,18 +395,10 @@ footer nav {
 p {
   font-size: 3rem; }
 
-.botonCarrito button {
-  color: #50433d;
-  background-color: #d3b9ab;
-  border: #50433d solid 0.3rem;
-  padding: 0.5rem 0.5rem;
-  margin-top: 1rem;
-  font-size: 3rem; }
-  .botonCarrito button :active {
-    background-color: #d3b9ab; }
-  .botonCarrito button:hover {
-    cursor: pointer;
-    background-color: #F2E9E4;
+.linkCarrito a {
+  text-decoration: none;
+  color: #50433d; }
+  .linkCarrito a:hover {
     color: #a27861; }
 
 /*  media query de .articuloLibro   */
