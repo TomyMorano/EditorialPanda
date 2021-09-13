@@ -64,6 +64,9 @@ footer{
     border-bottom: solid 0.3rem #50433d;
     text-align: center;
     color: #50433d;
+    p{
+        font-size: 3rem;
+    }
     li{
         list-style: none;
         a{
@@ -73,10 +76,10 @@ footer{
                 color: #50433d;
                 cursor: pointer;
             }
+            h4{
+                display: none;
+            }
         }
-    }
-    p{
-        font-size: 3rem;
     }
 }
 
@@ -87,6 +90,10 @@ footer{
         padding: 0.5rem 0rem;
         a{
             font-size: 3rem;
+            h4{
+                display: inline-block !important;
+                font-size: 3rem;
+            }
         }
         p{
             font-size: 4.5rem;

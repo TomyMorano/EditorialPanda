@@ -170,6 +170,8 @@ footer nav {
   border-bottom: solid 0.3rem #50433d;
   text-align: center;
   color: #50433d; }
+  .redesSociales p {
+    font-size: 3rem; }
   .redesSociales li {
     list-style: none; }
     .redesSociales li a {
@@ -178,8 +180,8 @@ footer nav {
       .redesSociales li a:hover {
         color: #50433d;
         cursor: pointer; }
-  .redesSociales p {
-    font-size: 3rem; }
+      .redesSociales li a h4 {
+        display: none; }
 
 /*  media query de NavBar Redes Sociales*/
 @media only screen and (min-width: 768px) {
@@ -187,6 +189,9 @@ footer nav {
     padding: 0.5rem 0rem; }
     .redesSociales a {
       font-size: 3rem; }
+      .redesSociales a h4 {
+        display: inline-block !important;
+        font-size: 3rem; }
     .redesSociales p {
       font-size: 4.5rem;
       font-weight: bold; } }
