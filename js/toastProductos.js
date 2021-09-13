@@ -1,16 +1,16 @@
-
-
 const option= {
     animation:true,
-    delay:15000,
-    autohide:false
+    delay:5000,
 };
-    const toastTrigger = document.getElementById('liveToastBtn')
-    const toastLiveExample = document.getElementById('liveToast')
-    if (toastTrigger) {
-    toastTrigger.addEventListener('click', function () {
-    const toast = new bootstrap.Toast(toastLiveExample,option)
-    
-    toast.show(true)
-    })
-}
+    const toastTrigger = document.querySelectorAll('.addToCart')
+    for(let i=0;i<toastTrigger.length;i++){
+        const toastLiveExample = document.querySelector(`.toast${i}`)
+        if (toastTrigger[i]){
+            toastTrigger[i].addEventListener('click', function (e) {
+            e.preventDefault()
+            const toast = new bootstrap.Toast(toastLiveExample,option)
+            
+            toast.show(true)
+            })
+        }
+    }
