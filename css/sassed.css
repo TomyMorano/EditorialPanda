@@ -107,22 +107,20 @@ header nav {
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: space-around; }
+    justify-content: space-around !important; }
     header nav ul li {
       padding-top: 1rem;
-      padding-bottom: 1rem;
-      border: none; }
+      padding-bottom: 1rem; }
       header nav ul li a {
         font-size: 3rem; } }
 
-@media only screen and (min-width: 1200px) {
-  header nav ul {
-    border: none; }
-    header nav ul li a {
-      font-size: 4rem; } }
+@media only screen and (min-width: 992px) {
+  header nav li {
+    padding-right: 2.5rem; } }
 
-.bordeNav {
-  border: none !important; }
+@media only screen and (min-width: 1200px) {
+  header nav ul li a {
+    font-size: 4rem; } }
 
 /*  NavBar del Footer*/
 footer nav {
