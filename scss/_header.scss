@@ -1,35 +1,31 @@
     /*  Zona Del Header e imagen heroe  */
     
-header{
-    h1{
-        a{
-            color: #e2d3ca;
-            font-size: 3.6rem;
-            font-weight: bolder;
-            text-decoration: none;
-            margin-top: 1.5rem;
-            width: 100%;
-            &:hover{
-                color: #50433d;
-            }
+
+.tituloEditorialPanda{
+    a{
+        color: #e2d3ca;
+        font-size: 3.6rem;
+        font-weight: bolder;
+        text-decoration: none;
+        margin-top: 1.5rem;
+        width: 100%;
+        &:hover{
+            color: #50433d;
         }
     }
 }
 
     /*  Media query de Zona del Header e imagen Heroe    */
-
-header{
-    h1{
-        a{
-            @media only screen and (min-width: 500px){
-                font-size: 5rem;
-            }
-            @media only screen and (min-width: 768px){
-                font-size: 8rem;
-            }
-            @media only screen and (min-width: 1200px){
-                font-size: 10rem;
-            }
+.tituloEditorialPanda{
+    a{
+        @media only screen and (min-width: 500px){
+            font-size: 5rem;
+        }
+        @media only screen and (min-width: 768px){
+            font-size: 8rem;
+        }
+        @media only screen and (min-width: 1200px){
+            font-size: 10rem;
         }
     }
 }

@@ -21,7 +21,7 @@
                 <!--    Logo    -->
             <div class="logoHeader"><a href="../index.html"><img src="../fotos/LogoEditorialPanda.jpg" alt="logo de Editorial Panda"></a></div>
                 <!--    Texto Editorial Panda   -->
-            <div><h1><a href="../index.html">Editorial Panda</a></h1></div>
+            <div><span class="tituloEditorialPanda"><a href="../index.html">Editorial Panda</a></span></div>
         </div>
     
         <!--    Empieza Botonera de navegación Principal Bootstrap  -->
@@ -53,17 +53,18 @@
         </nav>
         <!--    Termina Botonera de navegación Principal Bootstrap  -->
     </header>
-    <section class="contacto">
-        <h2 id="tituloPrimeroContacto">Centro de contacto</h2>
+
         <!--Empieza la Sección de contacto con su formulario-->
+    <section class="contacto">
+        <h1 id="tituloPrimeroContacto">Centro de contacto</h1>
         <fieldset>
             <form action="" method="POST">
                 
-                <label for="nombre-apellido">Nombre y apellido</label> <br>
-                <input type="text" name="nombre-apellido" placeholder="Aquí su nombre y apellido"> <br>
+                <label for="nombre">Nombre</label> <br>
+                <input type="text" name="nombre" placeholder="Nombre"> <br>
 
                 <label for="email">Email</label> <br>
-                <input type="email" name="email" placeholder="Aquí su email">   <br>
+                <input type="email" name="email" placeholder="Email">   <br>
 
                 <label for="newsletter">Desea suscribirse a nuestro Newsletter?</label>
                 <input type="checkbox" name="newsletter"> <br>
@@ -71,8 +72,8 @@
                 <label for="comentario">Mensaje:</label>
                 <textarea name="comentario" id="" cols="35" rows="15"></textarea> <br>
 
-                <input type="reset" value="Cancelar">
                 <input type="submit" value="Enviar">
+                <input type="reset" value="Cancelar">
             </form>
         </fieldset>
 
@@ -110,5 +111,8 @@
             </ul>
         </nav>
     </footer>
+
+        <!--script de bootstrap.js y poper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
